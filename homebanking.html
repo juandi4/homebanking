@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <title>PepitoBank</title>
+        <link rel="icon" href="logo.png">
+    </head>
+    <body>
+        <header>
+            <a href="PepitoBank.html" class="logo">
+                <img src="logo.png" alt="logo principal">
+                <h2 class="nombre-empresa">PepitoBank</h2>
+            </a>
+            <nav>
+                <a href="PepitoHomebanking.html">Inicio</a></li>
+                <a href="creditoshomebanking.html">Créditos</a></li>
+                <a href="homebanking.html">Mi Homebanking</a></li>
+            </nav>
+        </header>
+        <div class="tab-container"> <! – INICIO DE SOLAPAS HOMEBANKING –>
+            <ul class="options">
+                <li name="option1" id="option1" class="option option-active">Cartera</li>
+                <li name="option2" id="option2" class="option">Mis tarjetas</li>
+                <li name="option3" id="option3" class="option">Actividad</li>
+                <li name="option4" id="option4" class="option">Cuenta</li>
+                <li name="option5" id="option5" class="option">Ajustes</li>
+            </ul>
+            <div class="contents"> <! – Solapas en Homebanking –>
+
+                <div id="content1" class="content content-active">
+                    <h3>Cartera</h3>
+                    <p>Lorem</p>
+
+
+
+
+                    <div class="transferencia">
+                        <h1>Transferencia</h1>
+                        <span id="valor">$1500</span>
+                        <button class="boton disminuir">Disminuir</button>
+                        <button class="boton aumentar">Aumentar</button>
+                        <button class="boton resetear">Enviar</button>
+                      </div>
+                    
+
+
+
+                    <div class="cambio_moneda"> <! – Cambio de divisas –>
+                        <h4>Cambio de divisas</h4>
+                        <form class="formulario_moneda">
+                            <p>Seleccionar moneda a cambiar</p>
+                            <input class="check_moneda" type="radio" name="cambio" id="uno">USD
+                            <input class="check_moneda" type="radio" name="cambio" id="dos">EUR
+                            <input class="check_moneda" type="radio" name="cambio" id="tres">BRL
+                            <input class="check_moneda" type="radio" name="cambio" id="cuatro">GBP
+                            <input class="check_moneda" type="radio" name="cambio" id="cinto">CNY
+                            <p>Ingresar un monto en pesos argentinos (ARG)</p>
+                            <input type="number" id="valor" min="1" max="100000">
+                            <input class="boton_moneda" type="button" id="cotizador" value="cotizar" onclick="convertir()">
+                        </form>
+                    </div>
+                </div>
+
+                <div id="content2" class="content">
+                    <h3>Mis tarjetas</h3>
+                    <p>Lorem iadipisicing elit. Enim laudantium voluptatem numquam eligendi aspernatur, ipsum voluptas ratione doloribus consectetur, perferendis praesentium dignissimos dolores, hic neque?</p>
+
+                    <div class="cardsContainer">
+                        <div class="mastercardheader">
+                          <div class="mastercardlogo">
+                            <img src="master card.png" alt="" />
+                            <h5>Master Card</h5>
+                          </div>
+                            <img src="chipcard.jpg" alt="" class="chip" />
+                        </div>
+                        <div class="card-details">
+                          <div class="name-number">
+                            <h6>Card Number</h6>
+                            <h5 class="number">8050 5040 2030 3020</h5>
+                            <h5 class="name">Prem Kumar Shahi</h5>
+                          </div>
+                          <div class="valid-date">
+                            <h6>Valid Thru</h6>
+                            <h5>05/28</h5>
+                          </div>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+
+                <div id="content3" class="content">
+                    <h3>Actividad</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim laudantium voluptatem numquam eligendi aspernatur, ipsum voluptas ratione doloribus consectetur, perferendis praesentium dignissimos dolores, hic neque?</p>
+                </div>
+
+                <div id="content4" class="content">
+                    <h3>Cuenta</h3>
+                    <p>Lortetur adipisicing elit. Enim laudantium voluptatem numquam eligendi aspernatur, ipsum voluptas ratione doloribus consectetur, perferendis praesentium dignissimos dolores, hic neque?</p>
+                </div>
+                <div id="content5" class="content">
+                    <h3>Ajustes</h3>
+                    <p>Lortetur adipisicing elit. Enim laudantium voluptatem numquam eligendi aspernatur, ipsum voluptas ratione doloribus consectetur, perferendis praesentium dignissimos dolores, hic neque?</p>
+                </div>
+            </div>
+        </div>
+        <script src="funciones.js"></script>
+        <footer>
+            <div class="container__footer">
+                <div class="box__footer">
+                    <div class="logo">
+                        <img src="logo.png" alt="">
+                        <h3>PepitoBank</h3>
+                    </div>
+                    <div class="terms">
+                        <p>Lorem ipsum dolor sit a</p>
+                    </div>
+                </div>
+                <div class="box__footer">
+                    <h2>Soporte</h2>
+                    <a href="https://www.google.com">Asesoramiento en línea</a>
+                    <a href="#">Recursos humanos</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+                <div class="box__footer">
+                    <h2>Compañia</h2>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Seguros</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Sucursales</a>              
+                </div>
+                <div class="box__footer">
+                    <h2>Redes Sociales</h2>
+                    <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank"> <i class="fab fa-twitter-square"></i> Twitter</a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+            </div>
+            <div class="box__copyright">
+                <hr>
+                <p>Todos los derechos reservados © 2023 <b>juancitokpo</b></p>
+            </div>
+        </footer>
+    </body>
+</html>
